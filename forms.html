@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <form>
+        <p><label>Search
+                <input type="search" name="query">
+            </label>
+        </p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+
+    <form>
+        <p><label>Appointment
+                <input type="date" name="date" value="2010-12-31">
+
+            </label></p>
+        <p><label>Appointment
+                <input type="month" name="month">
+                <input type="week" name="week">
+                <input type="datetime-local" name="day">
+
+
+            </label></p>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p><label>E-mail address <input type="email" name="email" autofocus required title="this fied is needed"></label></p>
+            <p><label>Web site <input type="url" name="website" title="That doesnot look good"></label></p>
+            <p><label>Telephone number <input type="tel" name="phone"  pattern="[2-9][0-9]{2}-[0-9]{3}-[0-9]{4}"
+                title="North American format: XXX-XXX-XXXX"></label></p>
+            <p><label><input type="range" min="0" max="10" step=".5" value="5" name="range" autocomplete="off"></label></p>
+            <p><label><input type="color" name="bg"></label></p>
+            <p><label>Editable Dropdown<input type="text" name="donation" list="donations"> </label></p>
+
+            <datalist id="donations">
+                <option value="10.00">10.00</option>
+                <option value="25.00">25.00</option>
+                <option value="50.00">50.00</option>
+            </datalist>
+
+
+            <p><label for="donation">Donation amount</label>
+                <datalist id="donations">
+                    <select name="donation">
+                        <option></option>
+                        <option value="10.00">10.00</option>
+                        <option value="25.00">25.00</option>
+                        <option value="50.00">50.00</option>
+                        <option>Other</option>
+                    </select>
+                    If other, please specify:
+                </datalist>
+                <input type="text" id="donation" name="donation" list="donations"></p>
+        </fieldset>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+
+</html>
